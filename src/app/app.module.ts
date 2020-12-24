@@ -1,4 +1,5 @@
-@@ -3,11 +3,18 @@ import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -9,8 +10,6 @@ import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-	NavbarComponent
    AppComponent,
    NavbarComponent,
    AboutComponent,
@@ -19,3 +18,9 @@ import { HomeComponent } from './components/home/home.component';
 
   ],
   imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
